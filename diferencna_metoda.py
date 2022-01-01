@@ -221,10 +221,10 @@ start = time.time()
 T = data_save('data1.npy')
 end = time.time()
 print(end - start)
-
+'''
 plot_phase()
 plt.show()
-
+'''
 #plot
 '''
 animate_one(int(round(Nt*T_0/t*2*1)), 0)
@@ -241,8 +241,7 @@ plt.show()
 #animate
 
 
-'''
-ani = animation.FuncAnimation(fig, animate, frames = range(0, Nt, 50), repeat = True, interval = 100, cache_frame_data=False)
+
+ani = animation.FuncAnimation(fig, animate, frames = range(0, Nt, 200), repeat = True, interval = 100, cache_frame_data=False)
 #plt.show()
 ani.save('im.gif')
-'''
